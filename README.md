@@ -14,7 +14,9 @@ I also once in a while do some art, even though I don't do it as often as I used
 
 - [Github](https://github.com/cmd410)
 
-- [Artstation](https://www.deviantart.com/cmd410)
+- [DeviantArt](https://www.deviantart.com/cmd410)
+
+- [Artstation](https://cmd410.artstation.com/)
 
   Last but not least, my [telegram channel](https://t.me/spacialdot) where I write  random crap once in a while.
 
