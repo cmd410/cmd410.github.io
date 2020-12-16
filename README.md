@@ -18,8 +18,10 @@ I also once in a while do some art, even though I don't do it as often as I used
 
 - [Artstation](https://cmd410.artstation.com/)
 
-  Last but not least, my [telegram channel](https://t.me/spacialdot) where I write  random crap once in a while.
+- Last but not least, my [telegram channel](https://t.me/spacialdot) where I write  random crap once in a while.
 
-  ### btw...
+
+## btw...
 
   _If I somehow succeed in making you a happier person... you know... uhm... you could make me happier as well... If you have some spare coins consider supporting me. You could maybe... I dunno... [buy me a coffee](https://www.buymeacoffee.com/cmd410) or maybe maybe even [sponsor me on librepay](https://liberapay.com/CrystalMeltingDot/)... That would be absolutely awesome... But anyway, hope you found what you were looking for, take care, internet traveler_
+
