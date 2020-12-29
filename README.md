@@ -11,13 +11,10 @@ I also once in a while do some art, even though I don't do it as often as I used
 ## My places
 
 - This site
-
 - [Github](https://github.com/cmd410)
-
 - [DeviantArt](https://www.deviantart.com/cmd410)
-
 - [Artstation](https://cmd410.artstation.com/)
-
+- <a rel="me" href="https://mastodon.gamedev.place/@cmd410">Mastodon</a>
 - Last but not least, my [telegram channel](https://t.me/spacialdot) where I write  random crap once in a while.
 
 
