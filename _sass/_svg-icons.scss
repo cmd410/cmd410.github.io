@@ -1,0 +1,10 @@
+.svg-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+
+  &.email         { background-image: url("/images/icons/mail_logo.svg"); }
+  &.github        { background-image: url("/images/icons/gh_logo.svg"); }
+  &.rss           { background-image: url("/images/icons/rss_logo.svg"); }
+  &.telegram      { background-image: url("/images/icons/t_logo.svg"); }
+}
