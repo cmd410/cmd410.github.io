@@ -334,6 +334,26 @@ p > img {
   }
 }
 
+.donate {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.bmc-btn {
+  margin: 12px;
+  min-width: 100px !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  border-radius: 4px !important;
+  padding: 0px 12px !important;
+}
+
+.liberapay-btn {
+  margin: 12px;
+  min-width: 100px !important;
+}
+
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
