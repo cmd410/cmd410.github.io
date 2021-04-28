@@ -17,7 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-  --shadow-settings: 0 0 1em #27272727;
+  --shadow-settings: 0 0 2em #27272727;
 }
 
 html {
@@ -85,12 +85,18 @@ h4 {
 
 p {
   margin: 15px 0;
+  line-height: 1.5;
   word-wrap:break-word;
 }
 
 article {
   align-self: center;
   max-width: 45em;
+}
+
+.detailed, .page {
+  display: block;
+  margin: 0 auto;
 }
 
 table {
@@ -133,27 +139,19 @@ table tr td :last-child {
 	margin-bottom: 0;
 }
 
-/*.detailed .entry p:first-of-type:first-letter {
-    float: left;
-    margin: 0.13em 0.05em 0 -0.05em;
-    font-size: 3.333em;
-    line-height: 0.75em;
-}*/
-
 #search-container {
   text-align: center;
 }
 
 #search-input {
   width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 0.8em;
-  background-color: #fff3ff;
+  padding: 1em 1.5em;
+  margin: 1em 0;
+  box-shadow: var(--shadow-settings);
+  border-radius: 1em;
+  border-style: none;
+  font-size: 1em;
+  background-color: #ffffff;
 }
 
 .share-box {
@@ -222,7 +220,7 @@ strong, b {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 2em auto;
   box-shadow: var(--shadow-settings);
 }
 
@@ -285,9 +283,9 @@ p > img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 5em;
+  height: 5em;
+  margin: 0 2em;
 
   @include mobile {
     float: none;
@@ -296,7 +294,8 @@ p > img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 1em;
+    margin: 0 auto !important;
   }
 }
 
