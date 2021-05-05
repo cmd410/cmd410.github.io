@@ -1,10 +1,6 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
 @import "reset";
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -38,7 +34,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 80em;
+  max-width: 75ch;
   padding: 0 1em;
   width: 100%;
 }
@@ -91,7 +87,7 @@ p {
 
 article {
   align-self: center;
-  max-width: 45em;
+  max-width: 75ch;
 }
 
 .detailed, .page {
@@ -287,8 +283,8 @@ p > img {
   padding-top: 1em;
   border-top: var(--boder-size) solid #333;
   border-bottom: var(--boder-size) solid #333;
-  max-width: 45ch;
-  margin: 0 auto;
+  max-width: 75ch;
+  margin: 2em auto;
 }
 
 .site-avatar {
