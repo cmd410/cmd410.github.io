@@ -16,7 +16,8 @@
 
 
 :root {
-  --shadow-settings: 0 0 2em #27272727;
+  --shadow-settings: 0.1em 0.1em 0.4em #27272732;
+  --b-radius: 0.2em;
 }
 
 html {
@@ -147,7 +148,7 @@ table tr td :last-child {
   padding: 1em 1.5em;
   margin: 1em 0;
   box-shadow: var(--shadow-settings);
-  border-radius: 1em;
+  border-radius: var(--b-radius);
   border-style: none;
   font-size: 1em;
   background-color: #ffffff;
@@ -220,6 +221,7 @@ img {
   display: block;
   max-width: 100%;
   margin: 2em auto;
+  border-radius: var(--b-radius);
   box-shadow: var(--shadow-settings);
 }
 
@@ -280,6 +282,15 @@ p > img {
   }
 }
 
+.donate-wrapper {
+  --boder-size: 0.1rem;
+  padding-top: 1em;
+  border-top: var(--boder-size) solid #333;
+  border-bottom: var(--boder-size) solid #333;
+  max-width: 45ch;
+  margin: 0 auto;
+}
+
 .site-avatar {
   float: left;
   width: 5em;
@@ -293,7 +304,7 @@ p > img {
   }
 
   img {
-    border-radius: 1em;
+    border-radius: 3em;
     margin: 0 auto !important;
   }
 }
@@ -348,9 +359,8 @@ p > img {
   min-width: 100px !important;
   height: 2em !important;
   font-size: 1em !important;
-  border-radius: 4px !important;
   background-color: rgb(31, 31, 31);
-  border-radius: 8px;
+  border-radius: var(--b-radius);
   justify-content: center;
   display: flex;
   padding: 8px 12px 8px 12px;
@@ -402,7 +412,7 @@ nav {
   flex-basis: 40em;
   flex-shrink: 1;
   flex-grow: 1;
-  border-radius: 0.5em;
+  border-radius: var(--b-radius);
   padding: 1em;
   box-shadow: var(--shadow-settings);
 }
@@ -411,7 +421,7 @@ nav {
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
-    border-radius: 0.5em;
+    border-radius: var(--b-radius);
     font-weight: 200;
     font-style: italic;
     padding: 0.1em 1em;
@@ -531,7 +541,7 @@ body:after {
   padding: 2px 13px;
   border: none;
   background-color: #2b2c3f;
-  border-radius: 50px;
+  border-radius: 1em;
   color: #fff;
 }
 
