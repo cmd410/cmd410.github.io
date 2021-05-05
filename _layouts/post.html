@@ -26,6 +26,9 @@ layout: default
   </div>
     
   <div class="entry">
+    {% if page.image %}
+    <img src={{ page.image }}>
+    {% endif %}
     {{ content }}
   </div>
 

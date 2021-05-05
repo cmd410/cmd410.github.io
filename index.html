@@ -11,9 +11,9 @@ layout: default
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
         </div>
       </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      {% if post.image %}
+      <img src={{ post.image }}>
+      {% endif %}
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
@@ -47,17 +47,4 @@ layout: default
   {% endif %}
 </div>
 
-
-<h2>Поддержать</h2>
-<div class="donate">
-  <div class="btn">
-    <a target="_blank" href="https://liberapay.com/CrystalMeltingDot/donate">
-      Liberapay
-    </a>
-  </div>
-  <div class="btn">
-      <a target="_blank" href="http://buymeacoffee.com/cmd410">
-        ☕<span class="btn-text">Buy me a coffee</span>
-      </a>
-  </div>
-</div>
+{% include donate.html %}

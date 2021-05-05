@@ -17,8 +17,17 @@
 {% endif %}
 
 {% if page.image %}
-<meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
-<meta property="twitter:image" content="{{ site.url }}{{ page.image }}"/>
+
+{% capture imgurl %}
+{% if page.image contains '://' %}
+    {{ page.image }}
+{% else %}
+    {{ page.image | prepend: site.url }}
+{% endif %}
+{% endcapture %}
+
+<meta property="og:image" content="{{ imgurl }}"/>
+<meta property="twitter:image" content="{{ imgurl }}"/>
 {% else %}
 <meta property="og:image" content="{{ site.url }}{{ site.avatar }}"/>
 <meta property="twitter:image" content="{{ site.url }}{{ site.avatar }}"/>
