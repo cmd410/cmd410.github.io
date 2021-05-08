@@ -7,12 +7,15 @@ layout: default
     <article class="post">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h1>{{ post.title }}</h1>
+        {% if post.subtitle %}
+        <p class='subtitle'>{{ post.subtitle }}</p>
+        {% endif %}
         <div>
           <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
         </div>
       </a>
       {% if post.image %}
-      <img src={{ post.image }}>
+      <img class="post-cover" src={{ post.image }}>
       {% endif %}
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

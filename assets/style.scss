@@ -12,7 +12,8 @@
 
 
 :root {
-  --shadow-settings: 0.1em 0.1em 0.4em #27272732;
+  --shadow-bg: 0.1em 0.1em 0.2em #27272716;
+  --shadow-fg: 0.4em 0.4em 0.8em #27272716;
   --b-radius: 0.2em;
 }
 
@@ -47,6 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
   padding: 0;
   text-align: center;
+  margin-top: 1.5em;
 
   @include mobile {
     line-height: 1.4;
@@ -60,22 +62,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 1.8em;
-}
-
-h3 {
   font-size: 1.6em;
 }
 
-h4 {
+h3 {
   font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
   color: #222;
 }
 
@@ -143,7 +145,7 @@ table tr td :last-child {
   width: 80%;
   padding: 1em 1.5em;
   margin: 1em 0;
-  box-shadow: var(--shadow-settings);
+  box-shadow: var(--shadow-bg);
   border-radius: var(--b-radius);
   border-style: none;
   font-size: 1em;
@@ -215,11 +217,17 @@ strong, b {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   margin: 2em auto;
   border-radius: var(--b-radius);
-  box-shadow: var(--shadow-settings);
+  box-shadow: var(--shadow-bg);
+  object-fit: cover;
 }
+
+.post-cover {
+  max-height: 30em;
+}
+
 
 p > img {
   text-align: center;
@@ -398,19 +406,24 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   margin-bottom: 4em;
   gap: 1em;
 }
 
 .posts > .post {
-  max-width: 50em;
-  flex-basis: 40em;
+  max-width: 85ch;
+  flex-basis: 45ch;
   flex-shrink: 1;
   flex-grow: 1;
   border-radius: var(--b-radius);
   padding: 1em;
-  box-shadow: var(--shadow-settings);
+  box-shadow: var(--shadow-bg);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.posts > .post:hover {
+  box-shadow: var(--shadow-fg);
 }
 
 .post {
